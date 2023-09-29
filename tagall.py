@@ -10,7 +10,9 @@ class TagAll(loader.Module):
     strings = {
         "name": "TagAll",
         "info_user": "User {io}"
-    
+    }
+
+
     @loader.command(alias="tl")
     async def tagall(self, message: Message, client: hikkatl.client.TelegramClient):
         if message.from_id.chat_id:
